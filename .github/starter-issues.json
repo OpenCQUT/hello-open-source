@@ -1,0 +1,27 @@
+[
+  {
+    "title": "docs: polish the first PR guide for absolute beginners",
+    "labels": ["good first issue", "documentation"],
+    "body": "## 背景\n\n`docs/contribute/first-pr.md` 是新人完成第一次贡献的关键页面，但仍可以补充更明确的操作提示。\n\n## 任务\n\n- 检查 Fork、Clone、创建分支、提交 PR 的步骤是否足够清楚。\n- 补充 1-2 条常见问题或注意事项。\n- 避免一次性改动太多内容。\n\n## 修改位置\n\n`docs/contribute/first-pr.md`\n\n## 验收标准\n\n- 文字适合第一次使用 GitHub 的同学。\n- 没有复制外部大段原文。\n- `npm run build` 可以通过。"
+  },
+  {
+    "title": "resource: add a beginner note for GitHub Skills",
+    "labels": ["good first issue", "resource", "documentation"],
+    "body": "## 背景\n\n资源页已经收录 GitHub Skills，但新人可能不知道该先做哪一个课程。\n\n## 任务\n\n- 在相关资源说明中补充建议路径。\n- 说明它适合谁、预计耗时和完成后下一步。\n\n## 修改位置\n\n`src/data/resources.js` 或 `docs/courses/index.md`\n\n## 验收标准\n\n- 给出明确行动建议。\n- 不把资源写成简单链接列表。\n- `npm run build` 可以通过。"
+  },
+  {
+    "title": "docs: add a small FAQ to the 30-day plan",
+    "labels": ["good first issue", "documentation"],
+    "body": "## 背景\n\n30 天计划告诉新人每天做什么，但还缺少对常见卡点的回答。\n\n## 任务\n\n- 增加一个 FAQ 小节。\n- 回答 2-3 个问题，例如：不会命令行怎么办、PR 没被合并怎么办、英文资源看不懂怎么办。\n\n## 修改位置\n\n`docs/learning-path/30-day-plan.md`\n\n## 验收标准\n\n- 回答具体、可执行。\n- 不制造学习焦虑。\n- `npm run build` 可以通过。"
+  },
+  {
+    "title": "design: review one mobile page and report layout issues",
+    "labels": ["good first issue", "design"],
+    "body": "## 背景\n\n本站面向新手，移动端阅读体验很重要。\n\n## 任务\n\n- 选择首页、资源页、路线图或贡献入口中的一个页面。\n- 在手机宽度下检查文字是否拥挤、按钮是否清楚、内容是否容易扫描。\n- 提交一个小的样式改进，或在 Issue 中报告具体问题。\n\n## 修改位置\n\n`src/pages/*.module.css`\n\n## 验收标准\n\n- 问题描述有页面和现象。\n- 如果提交 PR，改动范围保持小。\n- `npm run build` 可以通过。"
+  },
+  {
+    "title": "community: draft a first PR workshop outline",
+    "labels": ["good first issue", "community", "event"],
+    "body": "## 背景\n\n社区活动页面可以补充一份适合校园或学习小组使用的第一次 PR 工作坊大纲。\n\n## 任务\n\n- 设计 60-90 分钟活动流程。\n- 写清楚目标参与者、准备事项和产出。\n- 保持模板简单，便于维护者复用。\n\n## 修改位置\n\n`docs/community/events.md`\n\n## 验收标准\n\n- 活动流程可执行。\n- 适合第一次参与开源的同学。\n- `npm run build` 可以通过。"
+  }
+]
