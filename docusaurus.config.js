@@ -88,11 +88,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'learnSidebar',
             position: 'left',
-            label: '学习舱',
+            label: '学习文档',
           },
           {
             to: '/resources',
-            label: '资源雷达',
+            label: '精选资源',
             position: 'left',
           },
           {
@@ -107,7 +107,7 @@ const config = {
           },
           {
             to: '/blog',
-            label: '航日志',
+            label: '博客',
             position: 'left',
           },
           {

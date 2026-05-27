@@ -26,9 +26,9 @@ const missionCards = [
 ];
 
 const status = [
-  ['文档模块', '7 个主舱室'],
-  ['资源雷达', `${resources.length} 个首批资源`],
-  ['贡献入口', 'Issue / PR 模板'],
+  ['学习文档', '7 个主题模块'],
+  ['精选资源', `${resources.length} 个首批资源`],
+  ['新手任务', 'Issue / PR 模板'],
   ['部署链路', 'GitHub Actions'],
 ];
 
@@ -41,18 +41,18 @@ function Hero() {
           <div className={styles.heroCopy}>
             <p className={styles.kicker}>OpenCQUT · Hello Open Source</p>
             <Heading as="h1" className={styles.heroTitle}>
-              给编程与开源新人的
-              <span>第一座星门</span>
+              编程与开源新人的
+              <span>入门路线</span>
             </Heading>
             <p className={styles.heroSubtitle}>
-              一个现代科幻风的开源学习网站框架：用清晰路线、精选公开课、第一次 PR 任务和社区规范，帮助新人从“听说过开源”走到“参与开源”。
+              用清晰学习路线、精选公开课、第一次 PR 任务和社区规范，帮助新人从“听说过开源”走到“参与开源”。
             </p>
             <div className={styles.heroActions}>
               <Link className="button button--primary button--lg" to="/docs/intro">
-                启动学习舱
+                从项目介绍开始
               </Link>
               <Link className="button button--secondary button--lg" to="/contribute">
-                进入贡献入口
+                查看新手任务
               </Link>
             </div>
           </div>
@@ -115,7 +115,7 @@ function RoadmapPreview() {
           <div>
             <p className={styles.kicker}>Learning Trajectory</p>
             <Heading as="h2">从零基础到第一次合并</Heading>
-            <p>路线图按“认知 → 工具 → 贡献 → 实战 → 维护”推进，每一阶段都有产出。</p>
+            <p>路线按“认知 → 工具 → 贡献 → 实战 → 维护”推进，每一阶段都有产出。</p>
           </div>
           <Link className="button button--outline button--lg" to="/roadmap">
             查看完整路线图
@@ -146,7 +146,7 @@ function ResourceDock() {
             <p>资源库不追求大而全，优先给出适合人群、使用方式和阶段建议。</p>
           </div>
           <Link className="button button--primary button--lg" to="/resources">
-            打开资源雷达
+            查看精选资源
           </Link>
         </div>
         <div className={styles.resourceStrip}>
