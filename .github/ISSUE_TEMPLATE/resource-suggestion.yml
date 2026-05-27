@@ -1,0 +1,37 @@
+name: 推荐学习资源
+description: 推荐公开课、书籍、教程、工具或项目。
+title: "resource: "
+labels: ["resource", "needs-review"]
+body:
+  - type: input
+    id: resource-name
+    attributes:
+      label: 资源名称
+      placeholder: 例如 CS50、Missing Semester、Pro Git
+    validations:
+      required: true
+  - type: input
+    id: resource-link
+    attributes:
+      label: 资源链接
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: 适合阶段
+      options:
+        - 零基础
+        - 入门
+        - 进阶
+        - 维护者
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 推荐理由
+      description: 请说明它适合谁、学完能做什么、是否免费、是否有中文材料。
+    validations:
+      required: true

@@ -1,0 +1,24 @@
+name: 文档改进
+description: 报告错别字、链接失效、步骤不清楚或内容缺失。
+title: "docs: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 页面位置
+      placeholder: 例如 docs/contribute/first-pr
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      placeholder: 这里的步骤不清楚 / 链接失效 / 有错别字 ...
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议修改
+      placeholder: 可以直接写出你建议替换的内容。

@@ -1,0 +1,26 @@
+name: 活动提案
+description: 提议一次开源入门 Workshop、学习小组或文档冲刺。
+title: "event: "
+labels: ["community", "event"]
+body:
+  - type: input
+    id: event-name
+    attributes:
+      label: 活动名称
+      placeholder: 例如 第一次 PR 工作坊
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: 目标参与者
+      placeholder: 例如 刚学完 Git 基础、想完成第一次 PR 的同学。
+    validations:
+      required: true
+  - type: textarea
+    id: agenda
+    attributes:
+      label: 活动流程
+      placeholder: 30 分钟介绍 + 60 分钟实操 + 20 分钟答疑。
+    validations:
+      required: true

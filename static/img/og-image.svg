@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="a" cx="22%" cy="18%" r="80%">
+      <stop stop-color="#1D4ED8" stop-opacity="0.85"/>
+      <stop offset="0.45" stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="b" x1="84" y1="88" x2="1110" y2="560">
+      <stop stop-color="#6EE7F9"/>
+      <stop offset="0.48" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#93C5FD" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#a)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <path d="M964 86L1090 160V308L964 382L838 308V160L964 86Z" stroke="url(#b)" stroke-width="5" opacity="0.8"/>
+  <circle cx="964" cy="234" r="74" stroke="#6EE7F9" stroke-width="3" stroke-dasharray="12 14"/>
+  <text x="96" y="190" fill="#6EE7F9" font-size="32" font-family="Inter, system-ui, sans-serif" letter-spacing="6">OpenCQUT · HELLO OPEN SOURCE</text>
+  <text x="96" y="295" fill="#F8FAFC" font-size="76" font-weight="800" font-family="Inter, system-ui, sans-serif">给编程与开源新人的</text>
+  <text x="96" y="395" fill="url(#b)" font-size="86" font-weight="900" font-family="Inter, system-ui, sans-serif">第一座星门</text>
+  <text x="96" y="475" fill="#CBD5E1" font-size="30" font-family="Inter, system-ui, sans-serif">学习路径 · 公开课导读 · 第一次 PR · 社区协作</text>
+</svg>
