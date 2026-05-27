@@ -5,6 +5,16 @@
     "description": "适合第一次贡献的小范围任务。"
   },
   {
+    "name": "bug",
+    "color": "d73a4a",
+    "description": "页面、内容、链接、构建或交互存在明确问题。"
+  },
+  {
+    "name": "enhancement",
+    "color": "a2eeef",
+    "description": "小功能、新入口、体验优化或结构改进。"
+  },
+  {
     "name": "documentation",
     "color": "0075ca",
     "description": "文档、教程、说明文字或链接修正。"

@@ -15,6 +15,21 @@
     "body": "## 背景\n\n30 天计划告诉新人每天做什么，但还缺少对常见卡点的回答。\n\n## 任务\n\n- 增加一个 FAQ 小节。\n- 回答 2-3 个问题，例如：不会命令行怎么办、PR 没被合并怎么办、英文资源看不懂怎么办。\n\n## 修改位置\n\n`docs/learning-path/30-day-plan.md`\n\n## 验收标准\n\n- 回答具体、可执行。\n- 不制造学习焦虑。\n- `npm run build` 可以通过。"
   },
   {
+    "title": "bug: verify and fix one mobile layout issue",
+    "labels": ["good first issue", "bug", "design"],
+    "body": "## 背景\n\n本站希望新手可以从真实问题开始贡献。移动端阅读、按钮状态、侧边栏和卡片布局都适合做小范围 bug 修复。\n\n## 任务\n\n- 选择一个页面，在手机宽度下复现一个具体显示问题。\n- 在 Issue 或 PR 描述中写清楚复现页面、现象和预期结果。\n- 提交一个最小样式或内容修复。\n\n## 修改位置\n\n通常在 `src/pages/*.module.css` 或 `src/css/custom.css`。\n\n## 验收标准\n\n- 问题可复现，修复范围小。\n- 修复后页面没有横向溢出。\n- `npm run build` 可以通过。"
+  },
+  {
+    "title": "enhancement: add a small beginner-friendly improvement",
+    "labels": ["good first issue", "enhancement"],
+    "body": "## 背景\n\n第一次贡献也可以是轻量功能，只要范围清楚、能被 Review，并且不会把项目复杂化。\n\n## 任务\n\n- 选择一个很小的体验改进，例如增加提示文案、补充入口、改善筛选说明或增加检查清单。\n- 先在 Issue 中说明为什么需要它。\n- 提交 PR 时保持改动集中。\n\n## 修改位置\n\n可以是 `src/pages/`、`docs/` 或 `src/data/` 中的一个小范围文件。\n\n## 验收标准\n\n- 改动解决一个明确问题。\n- 不引入新的依赖。\n- `npm run build` 可以通过。"
+  },
+  {
+    "title": "docs: propose and fill one missing content gap",
+    "labels": ["good first issue", "documentation", "needs-review"],
+    "body": "## 背景\n\n新手往往最容易发现“这里缺一个解释”“这里缺一个例子”。这种内容缺口也适合作为第一次贡献。\n\n## 任务\n\n- 找一个仓库中缺少但对新手有帮助的说明、FAQ、示例或检查清单。\n- 在 Issue 中说明缺口、目标读者和建议放置位置。\n- 补充一小段内容，不要一次新增大篇幅章节。\n\n## 修改位置\n\n优先选择 `docs/` 下已有页面。\n\n## 验收标准\n\n- 说明具体，不是泛泛说“内容太少”。\n- 内容适合第一次接触开源的同学。\n- `npm run build` 可以通过。"
+  },
+  {
     "title": "design: review one mobile page and report layout issues",
     "labels": ["good first issue", "design"],
     "body": "## 背景\n\n本站面向新手，移动端阅读体验很重要。\n\n## 任务\n\n- 选择首页、资源页、路线图或贡献入口中的一个页面。\n- 在手机宽度下检查文字是否拥挤、按钮是否清楚、内容是否容易扫描。\n- 提交一个小的样式改进，或在 Issue 中报告具体问题。\n\n## 修改位置\n\n`src/pages/*.module.css`\n\n## 验收标准\n\n- 问题描述有页面和现象。\n- 如果提交 PR，改动范围保持小。\n- `npm run build` 可以通过。"

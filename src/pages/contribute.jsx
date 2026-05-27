@@ -6,6 +6,9 @@ import styles from './contribute.module.css';
 
 const tasks = [
   ['docs', '修正错别字、补充教程步骤、改善说明文字。'],
+  ['bug', '修复页面显示、链接跳转、构建警告或移动端布局问题。'],
+  ['feature', '增加一个小功能，例如筛选、入口、提示或阅读体验改进。'],
+  ['gap', '提出并补齐仓库里缺少的页面、FAQ、示例或任务说明。'],
   ['resource', '给公开课或工具补充中文导读和适合人群。'],
   ['design', '改进首页、卡片、排版和视觉层次。'],
   ['event', '提交一次 Workshop 模板或学习小组计划。'],
@@ -37,7 +40,7 @@ export default function ContributePage() {
             <Heading as="h2">推荐流程</Heading>
             <ol>
               <li>阅读项目 README 和贡献指南。</li>
-              <li>选择一个带有 `good first issue`、`documentation` 或 `resource` 标签的任务。</li>
+              <li>选择一个带有 `good first issue`、`bug`、`enhancement`、`documentation` 或 `resource` 标签的任务。</li>
               <li>Fork 仓库，创建新分支。</li>
               <li>完成一个小修改，不要一次改太多。</li>
               <li>提交 PR，并说明“改了什么、为什么改”。</li>
