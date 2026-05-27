@@ -6,6 +6,8 @@ title: Git 与 GitHub
 
 Git 是版本控制工具，GitHub 是基于 Git 的代码托管和协作平台。
 
+如果你还不理解 commit、branch、HEAD、merge 之间的关系，先打开本站的 [Git 可视化教程](/git-visual)，用提交图跑一遍第一次 PR 的基本流程。
+
 ## 必须掌握的操作
 
 ```bash

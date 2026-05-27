@@ -23,6 +23,11 @@ const sidebars = {
         'learning-path/programming-basics',
         'learning-path/cs-basics',
         'learning-path/git-github',
+        {
+          type: 'link',
+          label: 'Git 可视化教程',
+          href: '/git-visual',
+        },
         'learning-path/command-line',
         'learning-path/web-basics',
         'learning-path/project-practice',
