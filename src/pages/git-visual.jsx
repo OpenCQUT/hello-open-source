@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from 'react';
+import React, { useMemo, useState } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './git-visual.module.css';
@@ -10,17 +10,18 @@ const steps = [
     fullCommand: 'git clone https://github.com/OpenCQUT/hello-open-source.git',
     title: '把远程仓库复制到本地',
     summary: 'Clone 会创建本地仓库，并默认检出 main 分支。',
-    output: 'Cloning into hello-open-source...\nremote: Enumerating objects...\nReceiving objects: done.',
+    output:
+      'Cloning into hello-open-source...\nremote: Enumerating objects...\nReceiving objects: done.',
     workspace: ['README.md', 'docs/', 'src/'],
     staged: [],
     local: ['C0'],
     remote: ['origin/main → C0'],
     graph: {
-      commits: [{id: 'C0', x: 90, y: 170, label: 'main 初始'}],
+      commits: [{ id: 'C0', x: 90, y: 170, label: 'main 初始' }],
       lines: [],
       branches: [
-        {name: 'main', commit: 'C0'},
-        {name: 'origin/main', commit: 'C0', offset: -34},
+        { name: 'main', commit: 'C0' },
+        { name: 'origin/main', commit: 'C0', offset: -34 },
       ],
       head: 'main',
     },
@@ -50,12 +51,12 @@ const steps = [
     local: ['C0'],
     remote: ['origin/main → C0'],
     graph: {
-      commits: [{id: 'C0', x: 90, y: 170, label: 'main 初始'}],
+      commits: [{ id: 'C0', x: 90, y: 170, label: 'main 初始' }],
       lines: [],
       branches: [
-        {name: 'main', commit: 'C0'},
-        {name: 'docs/fix-typo', commit: 'C0', offset: -34},
-        {name: 'origin/main', commit: 'C0', offset: 34},
+        { name: 'main', commit: 'C0' },
+        { name: 'docs/fix-typo', commit: 'C0', offset: -34 },
+        { name: 'origin/main', commit: 'C0', offset: 34 },
       ],
       head: 'docs/fix-typo',
     },
@@ -112,14 +113,14 @@ const steps = [
     remote: ['origin/main → C0'],
     graph: {
       commits: [
-        {id: 'C0', x: 90, y: 170, label: 'main 初始'},
-        {id: 'C1', x: 220, y: 105, label: '修错别字'},
+        { id: 'C0', x: 90, y: 170, label: 'main 初始' },
+        { id: 'C1', x: 220, y: 105, label: '修错别字' },
       ],
       lines: [['C0', 'C1']],
       branches: [
-        {name: 'main', commit: 'C0'},
-        {name: 'docs/fix-typo', commit: 'C1', offset: -34},
-        {name: 'origin/main', commit: 'C0', offset: 34},
+        { name: 'main', commit: 'C0' },
+        { name: 'docs/fix-typo', commit: 'C1', offset: -34 },
+        { name: 'origin/main', commit: 'C0', offset: 34 },
       ],
       head: 'docs/fix-typo',
     },
@@ -143,7 +144,8 @@ const steps = [
     fullCommand: 'git remote -v',
     title: '确认远程仓库地址',
     summary: 'Remote 是本地仓库记住的远程名字。通常 origin 指向你的 fork。',
-    output: 'origin  https://github.com/your-name/hello-open-source.git (fetch)\norigin  https://github.com/your-name/hello-open-source.git (push)',
+    output:
+      'origin  https://github.com/your-name/hello-open-source.git (fetch)\norigin  https://github.com/your-name/hello-open-source.git (push)',
     workspace: ['工作区干净'],
     staged: [],
     local: ['C0', 'C1'],
@@ -156,22 +158,23 @@ const steps = [
     fullCommand: 'git push origin docs/fix-typo',
     title: '把任务分支推到 GitHub',
     summary: 'Push 会把本地分支发送到远程。推送后就可以在 GitHub 上创建 Pull Request。',
-    output: 'remote: Create a pull request for docs/fix-typo\nTo github.com:your-name/hello-open-source.git',
+    output:
+      'remote: Create a pull request for docs/fix-typo\nTo github.com:your-name/hello-open-source.git',
     workspace: ['工作区干净'],
     staged: [],
     local: ['C0', 'C1'],
     remote: ['origin/main → C0', 'origin/docs/fix-typo → C1'],
     graph: {
       commits: [
-        {id: 'C0', x: 90, y: 170, label: 'main 初始'},
-        {id: 'C1', x: 220, y: 105, label: '修错别字'},
+        { id: 'C0', x: 90, y: 170, label: 'main 初始' },
+        { id: 'C1', x: 220, y: 105, label: '修错别字' },
       ],
       lines: [['C0', 'C1']],
       branches: [
-        {name: 'main', commit: 'C0'},
-        {name: 'origin/main', commit: 'C0', offset: 34},
-        {name: 'docs/fix-typo', commit: 'C1', offset: -52},
-        {name: 'origin/docs/fix-typo', commit: 'C1', offset: -18},
+        { name: 'main', commit: 'C0' },
+        { name: 'origin/main', commit: 'C0', offset: 34 },
+        { name: 'docs/fix-typo', commit: 'C1', offset: -52 },
+        { name: 'origin/docs/fix-typo', commit: 'C1', offset: -18 },
       ],
       head: 'docs/fix-typo',
     },
@@ -189,14 +192,17 @@ const steps = [
     remote: ['origin/docs/fix-typo → C1', 'upstream/main → C2'],
     graph: {
       commits: [
-        {id: 'C0', x: 90, y: 170, label: 'main 初始'},
-        {id: 'C1', x: 220, y: 105, label: '你的修复'},
-        {id: 'C2', x: 220, y: 220, label: '上游更新'},
+        { id: 'C0', x: 90, y: 170, label: 'main 初始' },
+        { id: 'C1', x: 220, y: 105, label: '你的修复' },
+        { id: 'C2', x: 220, y: 220, label: '上游更新' },
       ],
-      lines: [['C0', 'C1'], ['C0', 'C2']],
+      lines: [
+        ['C0', 'C1'],
+        ['C0', 'C2'],
+      ],
       branches: [
-        {name: 'docs/fix-typo', commit: 'C1', offset: -34},
-        {name: 'upstream/main', commit: 'C2', offset: 34},
+        { name: 'docs/fix-typo', commit: 'C1', offset: -34 },
+        { name: 'upstream/main', commit: 'C2', offset: 34 },
       ],
       head: 'docs/fix-typo',
     },
@@ -214,13 +220,18 @@ const steps = [
     remote: ['upstream/main → C2'],
     graph: {
       commits: [
-        {id: 'C0', x: 90, y: 170, label: 'main 初始'},
-        {id: 'C1', x: 220, y: 105, label: '你的修复'},
-        {id: 'C2', x: 220, y: 220, label: '上游更新'},
-        {id: 'C3', x: 360, y: 170, label: '合并更新'},
+        { id: 'C0', x: 90, y: 170, label: 'main 初始' },
+        { id: 'C1', x: 220, y: 105, label: '你的修复' },
+        { id: 'C2', x: 220, y: 220, label: '上游更新' },
+        { id: 'C3', x: 360, y: 170, label: '合并更新' },
       ],
-      lines: [['C0', 'C1'], ['C0', 'C2'], ['C1', 'C3'], ['C2', 'C3']],
-      branches: [{name: 'docs/fix-typo', commit: 'C3'}],
+      lines: [
+        ['C0', 'C1'],
+        ['C0', 'C2'],
+        ['C1', 'C3'],
+        ['C2', 'C3'],
+      ],
+      branches: [{ name: 'docs/fix-typo', commit: 'C3' }],
       head: 'docs/fix-typo',
     },
   },
@@ -283,7 +294,8 @@ const steps = [
     fullCommand: 'git stash pop',
     title: '恢复临时保存的修改',
     summary: 'Pop 会恢复 stash，并从 stash 列表中移除。恢复时可能出现冲突。',
-    output: 'On branch docs/fix-typo\nChanges not staged for commit:\n  modified: docs/contribute/first-pr.md',
+    output:
+      'On branch docs/fix-typo\nChanges not staged for commit:\n  modified: docs/contribute/first-pr.md',
     workspace: ['docs/contribute/first-pr.md 已修改'],
     staged: [],
     local: ['C0'],
@@ -306,22 +318,68 @@ const steps = [
   },
 ];
 
-function Graph({step}) {
+function Graph({ step }) {
   const graph = step.graph ?? {
-    commits: step.local.map((id, index) => ({id, x: 90 + index * 130, y: 170, label: id === 'C0' ? '初始' : '提交'})),
+    commits: step.local.map((id, index) => ({
+      id,
+      x: 90 + index * 130,
+      y: 170,
+      label: id === 'C0' ? '初始' : '提交',
+    })),
     lines: step.local.slice(1).map((id, index) => [step.local[index], id]),
-    branches: [{name: 'HEAD', commit: step.local.at(-1)}],
+    branches: [{ name: 'HEAD', commit: step.local.at(-1) }],
     head: 'HEAD',
   };
   const byId = new Map(graph.commits.map((commit) => [commit.id, commit]));
+  const branchRows = new Map();
+  const branchLabels = graph.branches.map((branch) => {
+    const commit = byId.get(branch.commit);
+    const isAbove = (branch.offset ?? -1) < 0;
+    const rowKey = `${branch.commit}-${isAbove ? 'above' : 'below'}`;
+    const row = branchRows.get(rowKey) ?? 0;
+    branchRows.set(rowKey, row + 1);
+
+    const direction = isAbove ? -1 : 1;
+    const labelY = commit.y + direction * (48 + row * 36);
+    const lineStartY = commit.y + direction * 19;
+    const lineEndY = labelY - direction * 15;
+
+    return {
+      ...branch,
+      commit,
+      isHead: branch.name === graph.head || graph.head === branch.name,
+      labelY,
+      lineStartY,
+      lineEndY,
+    };
+  });
 
   return (
     <svg className={styles.graph} viewBox="0 0 560 310" role="img" aria-label="Git history graph">
       {graph.lines.map(([from, to]) => {
         const start = byId.get(from);
         const end = byId.get(to);
-        return <line className={styles.edge} key={`${from}-${to}`} x1={start.x} y1={start.y} x2={end.x} y2={end.y} />;
+        return (
+          <line
+            className={styles.edge}
+            key={`${from}-${to}`}
+            x1={start.x}
+            y1={start.y}
+            x2={end.x}
+            y2={end.y}
+          />
+        );
       })}
+      {branchLabels.map((branch) => (
+        <line
+          className={branch.isHead ? styles.headLine : styles.branchLine}
+          key={`${branch.name}-line`}
+          x1={branch.commit.x}
+          y1={branch.lineStartY}
+          x2={branch.commit.x}
+          y2={branch.lineEndY}
+        />
+      ))}
       {graph.commits.map((commit) => (
         <g key={commit.id}>
           <circle className={styles.node} cx={commit.x} cy={commit.y} r="17" />
@@ -333,25 +391,31 @@ function Graph({step}) {
           </text>
         </g>
       ))}
-      {graph.branches.map((branch) => {
-        const commit = byId.get(branch.commit);
-        const y = commit.y + (branch.offset ?? -34);
-        const isHead = branch.name === graph.head || graph.head === branch.name;
-        return (
-          <g key={branch.name}>
-            <line className={isHead ? styles.headLine : styles.branchLine} x1={commit.x} y1={commit.y} x2={commit.x} y2={y} />
-            <rect className={isHead ? styles.headTag : styles.branchTag} x={commit.x - 66} y={y - 14} width="132" height="28" rx="14" />
-            <text className={styles.branchText} x={commit.x} y={y + 5} textAnchor="middle">
-              {isHead ? `HEAD → ${branch.name}` : branch.name}
-            </text>
-          </g>
-        );
-      })}
+      {branchLabels.map((branch) => (
+        <g key={branch.name}>
+          <rect
+            className={branch.isHead ? styles.headTag : styles.branchTag}
+            x={branch.commit.x - 66}
+            y={branch.labelY - 14}
+            width="132"
+            height="28"
+            rx="14"
+          />
+          <text
+            className={styles.branchText}
+            x={branch.commit.x}
+            y={branch.labelY + 5}
+            textAnchor="middle"
+          >
+            {branch.isHead ? `HEAD → ${branch.name}` : branch.name}
+          </text>
+        </g>
+      ))}
     </svg>
   );
 }
 
-function StateColumn({title, items, empty = '暂无'}) {
+function StateColumn({ title, items, empty = '暂无' }) {
   return (
     <div className={styles.stateColumn}>
       <strong>{title}</strong>
@@ -385,7 +449,10 @@ export default function GitVisualPage() {
     }
 
     const nextIndex = Math.min(index + 1, steps.length - 1);
-    const nextHint = nextIndex === index ? '已经完成最后一步。' : `下一步建议运行：${steps[nextIndex].fullCommand}`;
+    const nextHint =
+      nextIndex === index
+        ? '已经完成最后一步。'
+        : `下一步建议运行：${steps[nextIndex].fullCommand}`;
     setMessage(`上一条命令输出：\n${current.output}\n\n${nextHint}`);
     if (nextIndex !== index) {
       setIndex(nextIndex);
@@ -402,7 +469,9 @@ export default function GitVisualPage() {
               <Heading as="h1">Git 可视化教程</Heading>
               <p>从工作区、暂存区、本地仓库到远程仓库，按第一次 PR 的路径理解常用 Git 命令。</p>
             </div>
-            <div className={styles.progress}>{index + 1} / {steps.length}</div>
+            <div className={styles.progress}>
+              {index + 1} / {steps.length}
+            </div>
           </div>
 
           <div className={styles.shell}>
@@ -410,19 +479,20 @@ export default function GitVisualPage() {
               {groups.map((group) => (
                 <div key={group}>
                   <h2>{group}</h2>
-                  {steps.map((step, stepIndex) => (
-                    step.group === group && (
-                      <button
-                        className={stepIndex === index ? styles.activeCommand : undefined}
-                        key={`${step.command}-${stepIndex}`}
-                        type="button"
-                        onClick={() => selectStep(stepIndex)}
-                      >
-                        <code>{step.command}</code>
-                        <span>{step.title}</span>
-                      </button>
-                    )
-                  ))}
+                  {steps.map(
+                    (step, stepIndex) =>
+                      step.group === group && (
+                        <button
+                          className={stepIndex === index ? styles.activeCommand : undefined}
+                          key={`${step.command}-${stepIndex}`}
+                          type="button"
+                          onClick={() => selectStep(stepIndex)}
+                        >
+                          <code>{step.command}</code>
+                          <span>{step.title}</span>
+                        </button>
+                      ),
+                  )}
                 </div>
               ))}
             </aside>
@@ -462,12 +532,21 @@ export default function GitVisualPage() {
                 <StateColumn title="工作区" items={current.workspace} />
                 <StateColumn title="暂存区" items={current.staged} />
                 <StateColumn title="本地仓库" items={current.local} />
-                <StateColumn title="远程 / stash" items={[...(current.remote ?? []), ...(current.stash ?? [])]} />
+                <StateColumn
+                  title="远程 / stash"
+                  items={[...(current.remote ?? []), ...(current.stash ?? [])]}
+                />
               </div>
               <div className={styles.legend}>
-                <span><b /> commit</span>
-                <span><b /> branch</span>
-                <span><b /> HEAD</span>
+                <span>
+                  <b /> commit
+                </span>
+                <span>
+                  <b /> branch
+                </span>
+                <span>
+                  <b /> HEAD
+                </span>
               </div>
             </section>
           </div>
