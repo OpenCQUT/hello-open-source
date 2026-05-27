@@ -140,6 +140,69 @@ html[data-theme='light'] .button.button--outline:hover {
   border-radius: 18px;
 }
 
+.doc-pager__controls {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 0.75rem);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  background: rgba(2, 6, 23, 0.84);
+  backdrop-filter: blur(18px);
+}
+
+.doc-pager__button {
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(110, 231, 249, 0.32);
+  border-radius: 999px;
+  color: #e0f2fe;
+  background: rgba(15, 23, 42, 0.72);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.doc-pager__button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.doc-pager__counter {
+  min-width: 4.5rem;
+  color: rgba(226, 232, 240, 0.78);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.doc-pager__viewport {
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  background: rgba(2, 6, 23, 0.18);
+}
+
+.doc-pager__track {
+  display: flex;
+  transition: transform 220ms ease;
+}
+
+.doc-pager__slide {
+  flex: 0 0 100%;
+  max-height: calc(100vh - var(--ifm-navbar-height) - 8rem);
+  min-height: min(620px, calc(100vh - var(--ifm-navbar-height) - 8rem));
+  overflow: auto;
+  padding: 1.4rem;
+}
+
+.doc-pager__slide > :first-child {
+  margin-top: 0;
+}
+
 .markdown table {
   display: table;
   width: 100%;
