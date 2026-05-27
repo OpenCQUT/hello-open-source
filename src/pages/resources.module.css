@@ -35,7 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .filterButton {
@@ -55,70 +55,13 @@
   background: linear-gradient(90deg, #6ee7f9, #34d399);
 }
 
-.pagerBar {
-  position: sticky;
-  top: calc(var(--ifm-navbar-height) + 0.75rem);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.85rem 1rem;
-  border: 1px solid var(--glass-border);
-  border-radius: 18px;
-  background: rgba(2, 6, 23, 0.82);
-  backdrop-filter: blur(18px);
-}
-
-.pagerBar strong,
-.pagerBar span {
-  display: block;
-}
-
-.pagerBar strong {
-  color: #f8fafc;
-}
-
-.pagerBar span {
-  color: var(--muted-text);
-  font-size: 0.85rem;
-  font-weight: 800;
-}
-
-.pagerActions {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.pagerActions button {
-  padding: 0.45rem 0.8rem;
-  border: 1px solid rgba(110, 231, 249, 0.32);
-  border-radius: 999px;
-  color: #e0f2fe;
-  background: rgba(15, 23, 42, 0.72);
-  cursor: pointer;
-  font-weight: 800;
-}
-
-.pagerActions button:disabled {
-  cursor: not-allowed;
-  opacity: 0.42;
-}
-
-.resourceViewport {
-  overflow: hidden;
-}
-
 .grid {
-  display: flex;
-  transition: transform 220ms ease;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
 }
 
 .card {
-  flex: 0 0 100%;
-  max-height: calc(100vh - var(--ifm-navbar-height) - 12rem);
-  overflow: auto;
   padding: 1.4rem;
   border: 1px solid var(--glass-border);
   border-radius: 26px;
@@ -243,10 +186,5 @@
   .guidePanel > div:first-child,
   .guidePanel > div:nth-child(3) {
     grid-column: auto;
-  }
-
-  .pagerBar {
-    align-items: flex-start;
-    flex-direction: column;
   }
 }
