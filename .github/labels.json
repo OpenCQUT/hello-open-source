@@ -1,0 +1,52 @@
+[
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "适合第一次贡献的小范围任务。"
+  },
+  {
+    "name": "documentation",
+    "color": "0075ca",
+    "description": "文档、教程、说明文字或链接修正。"
+  },
+  {
+    "name": "resource",
+    "color": "0e8a16",
+    "description": "学习资源推荐、评测或导读。"
+  },
+  {
+    "name": "design",
+    "color": "c5def5",
+    "description": "页面视觉、排版、可访问性或交互体验。"
+  },
+  {
+    "name": "community",
+    "color": "f9d0c4",
+    "description": "社区活动、学习小组和运营材料。"
+  },
+  {
+    "name": "event",
+    "color": "fbca04",
+    "description": "Workshop、分享会或文档冲刺提案。"
+  },
+  {
+    "name": "needs-review",
+    "color": "d4c5f9",
+    "description": "等待维护者审核或补充判断。"
+  },
+  {
+    "name": "help wanted",
+    "color": "008672",
+    "description": "欢迎贡献者参与。"
+  },
+  {
+    "name": "dependencies",
+    "color": "0366d6",
+    "description": "依赖升级或锁文件维护。"
+  },
+  {
+    "name": "github_actions",
+    "color": "000000",
+    "description": "GitHub Actions 工作流维护。"
+  }
+]
