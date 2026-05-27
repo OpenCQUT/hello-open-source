@@ -96,17 +96,30 @@ body {
   filter: brightness(1.06);
 }
 
-.button--secondary,
-.button--outline {
+html[data-theme='dark'] .button.button--secondary,
+html[data-theme='dark'] .button.button--outline {
   border-color: rgba(110, 231, 249, 0.36);
   color: #e0f2fe;
   background: rgba(15, 23, 42, 0.48);
 }
 
-.button--secondary:hover,
-.button--outline:hover {
+html[data-theme='dark'] .button.button--secondary:hover,
+html[data-theme='dark'] .button.button--outline:hover {
   color: #f8fafc;
   background: rgba(37, 99, 235, 0.38);
+}
+
+html[data-theme='light'] .button.button--secondary,
+html[data-theme='light'] .button.button--outline {
+  border-color: rgba(37, 99, 235, 0.28);
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme='light'] .button.button--secondary:hover,
+html[data-theme='light'] .button.button--outline:hover {
+  color: #0f172a;
+  background: rgba(219, 234, 254, 0.95);
 }
 
 .theme-doc-markdown {
