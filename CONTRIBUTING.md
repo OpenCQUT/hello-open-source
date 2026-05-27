@@ -18,12 +18,14 @@
 2. 新建分支。
 3. 修改内容。
 4. 本地运行并检查页面。
-5. 提交 Pull Request。
+5. 运行构建，确认文档链接和页面编译通过。
+6. 提交 Pull Request。
 
 ```bash
 git checkout -b docs/add-course-guide
-npm install
+npm ci
 npm run start
+npm run build
 ```
 
 ## 内容质量要求

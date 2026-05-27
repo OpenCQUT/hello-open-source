@@ -22,7 +22,7 @@
 ## 本地运行
 
 ```bash
-npm install
+npm ci
 npm run start
 ```
 
@@ -35,6 +35,7 @@ http://localhost:3000/hello-open-source/
 ## 构建
 
 ```bash
+npm ci
 npm run build
 npm run serve
 ```
@@ -85,6 +86,12 @@ docs/
 - 编写一次校园开源活动复盘。
 
 详见：[CONTRIBUTING.md](CONTRIBUTING.md)。
+
+提交 PR 前，请至少运行一次：
+
+```bash
+npm run build
+```
 
 ## 许可证
 
