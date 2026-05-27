@@ -66,6 +66,36 @@ export default function ResourcesPage() {
                   <strong>建议行动</strong>
                   <p>{resource.action}</p>
                 </div>
+                <div className={styles.guidePanel}>
+                  <div>
+                    <strong>课程目标</strong>
+                    <p>{resource.objective}</p>
+                  </div>
+                  <div>
+                    <strong>它到底讲什么</strong>
+                    <ul>
+                      {resource.covers.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <strong>任务会带你做什么</strong>
+                    <ul>
+                      {resource.tasks.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <strong>学习提醒</strong>
+                    <p>{resource.guide}</p>
+                  </div>
+                  <div>
+                    <strong>推荐时长和难度</strong>
+                    <p>{resource.difficulty}</p>
+                  </div>
+                </div>
                 <a href={resource.link} target="_blank" rel="noreferrer" className="button button--primary">
                   访问资源
                 </a>

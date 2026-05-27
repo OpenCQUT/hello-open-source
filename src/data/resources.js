@@ -11,6 +11,20 @@ export const resources = [
     link: 'https://cs50.harvard.edu/x/',
     summary: '适合作为计算机科学第一门课，覆盖 C、Python、SQL、Web、算法和数据结构。',
     action: '先看第 0–2 周，确认自己能接受课程节奏，再进入完整路线。',
+    objective: '用一门课建立“程序如何表达问题、数据如何组织、Web 应用如何连接前后端”的整体认识。',
+    covers: [
+      'Scratch：用可视化方式理解变量、条件、循环和事件。',
+      'C、数组、内存、数据结构：从底层理解程序、指针、字符串、链表、哈希表和树。',
+      'Python、SQL、HTML/CSS/JavaScript、Flask：把基础语法迁移到脚本、数据库和 Web 应用。',
+    ],
+    tasks: [
+      'Problem Set 0 会让你用 Scratch 做一个小作品，重点是把“想法”拆成程序步骤。',
+      'C 语言阶段会实现若干命令行程序，训练输入处理、算法思维和调试习惯。',
+      'SQL / Web 阶段会把数据查询、页面和后端路由连起来，为最后项目做准备。',
+      'Final Project 要自己定义问题、实现作品并做演示，是整门课的综合产出。',
+    ],
+    guide: '不要把 CS50 当视频课刷。每周只看讲座没有意义，Problem Set 才是学习主体。零基础建议先做 Week 0–2，能独立完成再继续。',
+    difficulty: '中高；零基础可学，但每周需要 6–12 小时，C 和内存部分最容易卡住。',
   },
   {
     title: 'The Missing Semester of Your CS Education',
@@ -22,6 +36,20 @@ export const resources = [
     link: 'https://missing.csail.mit.edu/',
     summary: '补齐 Shell、Git、编辑器、调试、脚本、自动化等传统课程常忽略的工具能力。',
     action: '先完成 Shell、Git、编辑器三讲，再尝试给本站提交一次文档 PR。',
+    objective: '把“会写代码”补成“能在真实项目里高效移动、修改、调试、协作”。',
+    covers: [
+      'Shell、脚本、文本处理：学会在命令行中查找文件、组合命令和批量处理文本。',
+      '编辑器、远程机器、版本控制：掌握项目修改、远程连接、分支、提交和协作。',
+      '调试、性能、构建、测试、元编程、安全：理解项目为什么出错，以及如何让流程自动化。',
+    ],
+    tasks: [
+      'Shell 练习会让你写管道、重定向和脚本，解决重复操作。',
+      'Git 练习会让你创建提交、理解历史、处理分支，并为 Pull Request 做准备。',
+      'Debugging / Profiling 会带你读日志、定位错误、观察程序性能，而不是盲猜。',
+      'Metaprogramming 会接触 Make、依赖、测试和 CI，理解开源项目为什么要自动化。',
+    ],
+    guide: '这门课适合穿插学。开源新人先学 Shell、Editors、Git 三讲；遇到项目构建或测试问题时，再回来看 Debugging 和 Metaprogramming。',
+    difficulty: '入门到中等；单讲不长，但需要真的敲命令。建议 5–10 天完成核心 5 讲。',
   },
   {
     title: 'MIT OpenCourseWare',
@@ -33,6 +61,19 @@ export const resources = [
     link: 'https://ocw.mit.edu/',
     summary: '适合系统学习计算机、数学、工程和科学课程，作为长期深造入口。',
     action: '不要直接随机刷课，先根据路线图选择算法、线代或系统课程。',
+    objective: '提供 MIT 课程材料作为长期补课入口，而不是替代一条已经排好的新手路线。',
+    covers: [
+      '计算机课程：编程导论、算法、系统、数据库、网络、人工智能等方向。',
+      '数学基础：线性代数、离散数学、概率、微积分等 CS 后续课程常用基础。',
+      '工程与科学课程：适合在做项目时补背景知识，而不是一次性全部学习。',
+    ],
+    tasks: [
+      '阅读课程 syllabus，判断是否有 lecture notes、assignments、exams 和 solutions。',
+      '选择一个课程模块完成作业，而不是收藏一整个课程列表。',
+      '把学到的一个概念转化成本站导读、笔记或项目说明。',
+    ],
+    guide: 'MIT OCW 是课程库，不是一门课。新手不要从首页随机点课，建议先根据“我缺什么”选择一个最小模块。',
+    difficulty: '跨度很大；推荐已经完成一次 PR 后再使用。单门课通常按 6–12 周规划。',
   },
   {
     title: 'OSSU Computer Science',
@@ -44,6 +85,19 @@ export const resources = [
     link: 'https://github.com/ossu/computer-science',
     summary: '用开放课程组合出接近本科 CS 的自学路径，适合长期系统学习。',
     action: '只在已有编程基础后使用；新手先完成本站 30 天路线。',
+    objective: '用公开课程拼出一条较完整的 CS 自学路径，覆盖编程、数学、系统、理论和应用。',
+    covers: [
+      'Intro CS、Core CS、Advanced CS、Final Project 等阶段。',
+      '课程表通常标注持续时间、每周投入、前置要求和讨论入口。',
+      '强调按依赖顺序推进，而不是看到什么热门课程就学什么。',
+    ],
+    tasks: [
+      '按课程表完成每门课的作业和项目，并记录完成日期。',
+      '在每个阶段做一个可展示产出，例如小程序、读书笔记、项目复盘。',
+      '最终用一个综合项目验证自己是否能独立设计和实现系统。',
+    ],
+    guide: 'OSSU 不适合作为“我今天想入门开源”的第一步。它更像长期本科替代路线，应该拆成季度计划。',
+    difficulty: '高；需要长期自律和英文阅读。建议每周 10–20 小时，至少按年规划。',
   },
   {
     title: 'Pro Git',
@@ -55,6 +109,19 @@ export const resources = [
     link: 'https://git-scm.com/book/zh/v2',
     summary: 'Git 官方推荐书籍，适合补齐分支、提交、远程仓库和协作模型。',
     action: '重点阅读前 3 章，不必一次读完整本。',
+    objective: '理解 Git 的基本模型，知道提交、分支、远程仓库和协作命令背后发生了什么。',
+    covers: [
+      'Getting Started：版本控制概念、安装、首次配置和帮助系统。',
+      'Git Basics：获取仓库、记录修改、查看历史、撤销、远程仓库、标签和别名。',
+      'Git Branching：分支、合并、远程分支和常见协作工作流。',
+    ],
+    tasks: [
+      '用一个测试仓库练习 add、commit、log、diff、restore 和 reset。',
+      '创建分支并合并，观察冲突出现时 Git 给出的提示。',
+      '连接远程仓库，完成 push / pull / fetch 的区别练习。',
+    ],
+    guide: '开源新人先读前 3 章即可。第 5 章和第 6 章适合在准备给真实项目贡献时再读。',
+    difficulty: '入门；3 天可掌握日常命令，1 周可理解分支协作。',
   },
   {
     title: 'MDN Web Docs',
@@ -66,6 +133,19 @@ export const resources = [
     link: 'https://developer.mozilla.org/',
     summary: 'Web 标准、HTML、CSS、JavaScript 的权威学习和查询入口。',
     action: '做首页改版或资源页时，用它查询 HTML/CSS/JS 语法。',
+    objective: '从零搭建 Web 基础，知道网页结构、样式、交互和浏览器 API 如何配合。',
+    covers: [
+      'Getting started：开发环境、文件结构、网页基本概念和第一个简单网站。',
+      'Core modules：HTML、CSS、JavaScript、可访问性、工具和发布基础。',
+      '参考文档：遇到具体标签、属性、CSS 规则或 Web API 时查标准说明。',
+    ],
+    tasks: [
+      '跟随入门模块搭建本地文件和简单页面。',
+      '用 HTML/CSS 修改一个真实页面结构和视觉层次。',
+      '用 JavaScript 给页面增加基础交互，再查文档理解 API 细节。',
+    ],
+    guide: 'MDN 不是线性刷完的课程。新手先走 Learn Web Development，再把 MDN 当成日常查证来源。',
+    difficulty: '入门到中等；入门模块 1–2 周，长期作为参考文档使用。',
   },
   {
     title: 'GitHub Skills',
@@ -77,6 +157,19 @@ export const resources = [
     link: 'https://skills.github.com/',
     summary: '通过小任务学习 GitHub 基础操作，适合完全没提过 PR 的同学。',
     action: '完成 Introduction to GitHub 后，再回本站做第一次 PR。',
+    objective: '在 GitHub 网站内用互动仓库练习协作动作，降低第一次 PR 的心理门槛。',
+    covers: [
+      'Introduction to GitHub：仓库、分支、提交、Pull Request 和合并。',
+      'Communicate using Markdown：用 Markdown 写结构化说明。',
+      'Review pull requests / Resolve merge conflicts：体验 Review 和冲突处理。',
+    ],
+    tasks: [
+      '课程会创建练习仓库，并用 GitHub Actions 给出下一步提示。',
+      '你会在网页上创建分支、修改文件、提交 commit、打开 PR 并合并。',
+      '后续课程会让你评论 PR、处理冲突或发布 GitHub Pages。',
+    ],
+    guide: '完全没用过 GitHub 的同学先做 Introduction to GitHub。做完后不要停在练习仓库，马上回本站找一个文档任务。',
+    difficulty: '零基础；第一门课通常 1 小时内完成，适合作为第一次 PR 前的热身。',
   },
   {
     title: '开源软件指南',
@@ -88,5 +181,18 @@ export const resources = [
     link: 'https://opensource.guide/zh-hans/',
     summary: '解释如何启动、维护和参与开源项目，适合建立协作认知。',
     action: '阅读“如何为开源做贡献”，对照本站贡献流程实践。',
+    objective: '理解开源贡献不只等于写代码，也包括文档、讨论、问题报告、社区协作和维护。',
+    covers: [
+      '如何贡献开源：为什么贡献、能贡献什么、如何找项目、如何提交贡献。',
+      '如何启动项目和建设社区：README、许可证、行为准则、沟通方式和维护节奏。',
+      '最佳实践：公开讨论、先读贡献指南、较大改动先开 issue。',
+    ],
+    tasks: [
+      '选择一个你正在使用的项目，阅读 README、CONTRIBUTING 和 Issues。',
+      '找一个文档、链接或说明问题，判断是否适合先开 issue。',
+      '按照项目要求提交一个小 PR，并在 Review 中保持公开沟通。',
+    ],
+    guide: '这份指南适合建立协作观念。读完后需要立刻做一次小贡献，否则容易停留在“我知道流程”的错觉。',
+    difficulty: '入门；1 天可读完核心内容，真正掌握需要配合一次真实贡献。',
   },
 ];
