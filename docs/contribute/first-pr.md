@@ -56,11 +56,14 @@ git checkout -b docs/my-first-pr
 - 补充一条学习建议；
 - 更新失效链接。
 
-改完后可以本地运行网站，确认页面能正常打开：
+改完后可以按照 README 的本地运行步骤安装依赖并启动网站：
 
 ```bash
+npm ci
 npm run start
 ```
+
+如果 `npm ci` 提示 lock file 不同步，可以尝试 `npm install`来安装依赖
 
 ### 5. 提交修改
 
